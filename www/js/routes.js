@@ -39,6 +39,7 @@ angular.module('app.routes', [])
       }
     }
   })
+  
 
   .state('findYourAdventure', {
     url: '/findyouradventure',
@@ -56,6 +57,12 @@ angular.module('app.routes', [])
     url: '/createaccount',
     templateUrl: 'templates/createAnAccount.html',
     controller: 'createAnAccountCtrl'
+  })
+  
+   .state('home', {
+    url: '/home',
+    templateUrl: 'templates/home.html',
+    controller: 'homeCtrl'
   })
 
   .state('findYourAdventure.cascadesPark', {

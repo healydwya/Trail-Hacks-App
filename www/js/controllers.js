@@ -3,6 +3,11 @@ angular.module('app.controllers', [])
 .controller('parksForHikingWalkingCtrl', function($scope) {
 
 })
+
+.controller('homeCtrl', function($scope) {
+
+})
+   
    
 .controller('mountainBikeTrailsCtrl', function($scope) {
 
@@ -12,12 +17,14 @@ angular.module('app.controllers', [])
 
 })
       
-.controller('loginCtrl', function($scope) {
+.controller('loginCtrl', function($scope, $state) {
   $scope.valid = false;
   
   $scope.submit = function(login) {
     if (login.username == "Emily" && login.password == "1234") {
       // go to homepage
+      $scope.valid = true
+      $state.go("home")
     }
   }
 })
