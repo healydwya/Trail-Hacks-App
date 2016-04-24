@@ -74,6 +74,16 @@ angular.module('app.routes', [])
       }
     }
   })
+  
+    .state('findYourAdventure.railroadsqaure', {
+    url: '/railroadsquare',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/railroadsquare.html',
+        controller: 'railroadsquareCtrl'
+      }
+    }
+  })
 
   .state('findYourAdventure.micosuckeeGreenway', {
     url: '/micosuckee',

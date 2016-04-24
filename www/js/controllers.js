@@ -12,6 +12,10 @@ angular.module('app.controllers', [])
 .controller('mountainBikeTrailsCtrl', function($scope) {
 
 })
+
+.controller('railroardsquareCtrl', function($scope) {
+
+})
    
 .controller('eventsCtrl', function($scope) {
 
